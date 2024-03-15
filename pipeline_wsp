@@ -1,0 +1,24 @@
+pipeline{
+
+        agent {
+                label {
+
+                        label 'dev'
+                        Workspace "/mnt/pipe"
+
+}
+}
+        stages{
+
+                stage{
+
+                        steps{
+
+                                sh'yum install tree -y'
+}
+}
+
+}
+
+
+}

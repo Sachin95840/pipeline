@@ -1,0 +1,39 @@
+pipeline{
+
+	agent {
+
+		label{  
+
+			label 'slave-2'
+
+			Wworkspace /mnt/pipeline-parallel
+
+ }
+
+
+}
+
+	stages {
+
+
+		parallel{
+ 		stage ('parallel'){
+
+		
+			steps{
+				echo "helloall"
+
+
+}
+}
+		stage('parallel-second'){
+
+			steps {
+				echo "hello velocity"
+}
+}
+
+}
+}
+
+}

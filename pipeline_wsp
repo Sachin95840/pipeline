@@ -3,7 +3,7 @@ pipeline{
         agent {
                 label {
 
-                        label "dev"
+                        label "buikt-in"
                         customWorkspace "/mnt/pipe"
 
 }
